@@ -1,5 +1,14 @@
 /* Write css code */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .slide{
     position: absolute;
     left: 0px;
@@ -19,5 +28,5 @@
     position: relative;
     height: 200px;
     margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }

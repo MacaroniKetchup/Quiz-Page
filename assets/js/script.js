@@ -179,34 +179,27 @@
   nextButton.addEventListener("click", showNextSlide);
 })();
 
-const deadline = '00:20:00'
+const timeH = document.querySelector('h2');
+let timeSecond = 60;
 
-initializeClock('clockdiv', deadline);
+displayTime(timeSecond)
 
-function getTimeRemaining(endtime) {
-  const seconds = Math.floor((total / 1000) % 60);
-  const minutes = Math.floor((total / 1000 / 60) % 60);
-  //const hours = Math.floor( (total/(1000*60*60)) % 24 );
+const countDown = setInterval(() => {
+  timeSecond--;
+  displayTime(timeSecond);
+  if (timeSecond <= 0 || timeSecond < 1) {
+    endTime();
+    clearInterval(countDown);
+  }
+}, 1000)
 
-  return {
-    total,
-    //hours,
-    minutes,
-    seconds,
-  };
+function displayTime(second){
+  const min = Math.floor(second / 60);
+  const sec = Math.floor(second % 60);
+  timeH.innerHTML= `${min<10 ? '0': ''}${min}:${sec<10?'0':''}${sec}`
 }
-
-function initializeClock(id, endtime) {
-  const clock = document.getElementById(id);
-  const timeinterval = setInterval(() => {
-    const t = getTimeRemaining(endtime);
-    clock.innerHTML = //'hours: ' + t.hours + '<br>' +
-      'minutes: ' + t.munites + '<br>' +
-      'seconds: ' + t.seconds;
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }, 1000);
+function endTime() {
+  timeH.innerHTML = 'QUIZ OVER'
 }
 
 
