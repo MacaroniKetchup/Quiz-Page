@@ -1,6 +1,8 @@
 // Write Javascript Code
 //console.log("helloWorld")
 
+
+//Quiz Code
 (function () {
   // Functions
   function buildQuiz() {
@@ -63,7 +65,7 @@
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = 'blue';
       }
       // if answer is wrong or blank
       else {
@@ -112,52 +114,52 @@
     {
       question: "1. Which of the following keywords is used to define a variable in Javascript?",
       answers: {
-        a: "var",
-        b: "let",
-        c: "Both A and B",
-        d: "None of the above"
+        A: "var",
+        B: "let",
+        C: "Both A and B",
+        D: "None of the above"
       },
-      correctAnswer: "c"
+      correctAnswer: "C"
     },
     {
       question: "2. Which of the following methods is used to access HTML elements using Javascript?",
       answers: {
-        a: "getElementbyId()",
-        b: "getElementsByClassName()",
-        c: "Both A and B",
-        d: "None of the above"
+        A: "getElementbyId()",
+        B: "getElementsByClassName()",
+        C: "Both A and B",
+        D: "None of the above"
       },
-      correctAnswer: "c"
+      correctAnswer: "C"
     },
     {
       question: "3. Which of the following methods can be used to display data in some form using Javascript?",
       answers: {
-        a: "document.write()",
-        b: "console.log()",
-        c: "window.alert()",
-        d: "All of the above"
+        A: "document.write()",
+        B: "console.log()",
+        C: "window.alert()",
+        D: "All of the above"
       },
-      correctAnswer: "d"
+      correctAnswer: "D"
     },
     {
       question: "4. Which function is used to serialize an object into a JSON string in Javascript?",
       answers: {
-        a: "stringify()",
-        b: "parse()",
-        c: "convert()",
-        d: "None of the above"
+        A: "stringify()",
+        B: "parse()",
+        C: "convert()",
+        D: "None of the above"
       },
-      correctAnswer: "a"
+      correctAnswer: "A"
     },
     {
       question: "5. How do we write a comment in javascript?",
       answers: {
-        a: "/* */",
-        b: "//",
-        c: "#",
-        d: "$ $"
+        A: "/* */",
+        B: "//",
+        C: "#",
+        D: "$ $"
       },
-      correctAnswer: "b"
+      correctAnswer: "B"
     }
   ];
 
@@ -177,13 +179,19 @@
   submitButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
+
 })();
 
+// TIMER
+(function () {
+// Sets time to 60 seconds
 const timeH = document.querySelector('h2');
 let timeSecond = 60;
 
+// Displays the time on page
 displayTime(timeSecond)
 
+// Function counts time down and prevents timer from counting past zero'd timer
 const countDown = setInterval(() => {
   timeSecond--;
   displayTime(timeSecond);
@@ -193,14 +201,18 @@ const countDown = setInterval(() => {
   }
 }, 1000)
 
+// Displays time in '00:00' format
 function displayTime(second){
   const min = Math.floor(second / 60);
   const sec = Math.floor(second % 60);
   timeH.innerHTML= `${min<10 ? '0': ''}${min}:${sec<10?'0':''}${sec}`
 }
+// Displays Quiz Over after timer reaches '00:00'
 function endTime() {
   timeH.innerHTML = 'QUIZ OVER'
 }
+})();
+
 
 
 

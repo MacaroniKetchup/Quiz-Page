@@ -3,6 +3,9 @@ Quiz Page
 
 ## Acknowledgments
 
+- [Simple Countdown Timer with JavaScript](https://www.youtube.com/watch?v=x7WJEmxNlEs)
+- [How To Create A Quiz App Using JavaScript?](https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript)
+
 - 
 
 ## Author
@@ -15,7 +18,13 @@ Quiz Page
 
 ## Features
 
-- 
+- Right and Wrong asnwers will display either blue for correct answers or red for wrong answers at the end of the quiz.
+
+- A one-minute countdown timer function.
+
+- Functioning Previous and Next buttons that can let you go back and forth between queations.
+
+- Hitting the submit quiz button displays total questions correct out of total question amount
 
 ## Liscense
 MIT License

@@ -1,15 +1,37 @@
 /* Write css code */
 
-h1,
+body {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-align: center;
+    background-color: #72b970;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(158, 150, 122);
+}
+
+
+
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
 }
 
-.slide{
+
+.slide {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -19,14 +41,52 @@ h6{
     transition: opacity 0.5s;
 }
 
-.active-slide{
+.active-slide {
     opacity: 1;
     z-index: 2;
 }
 
-.quiz-container{
+.quiz-container {
     position: relative;
     height: 200px;
     margin-top: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
+
+.question{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 5rem;
+  }
+  .answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+  }
+  .answers label{
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 5px;
+  }
+  .answers label:hover {
+    background-color: lightpink;
+  }
+
+ #next {
+    margin: 2rem;
+    background-color: burlywood;
+ }
+
+ #previous {
+    margin: 2rem;
+    background-color: burlywood;
+ }
+
+ #submit {
+    margin: 2rem;
+    background-color: burlywood;
+ }
