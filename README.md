@@ -15,6 +15,9 @@ Quiz Page
 
 ![Quiz Page Demo](./assets/image/quizdemo.gif)
 
+## Deployed Link
+- [Javascript Quiz Page](https://macaroniketchup.github.io/Quiz-Page/)
+
 ## Features
 
 - Right and Wrong asnwers will display either blue for correct answers or red for wrong answers at the end of the quiz.
