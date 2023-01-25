@@ -4,9 +4,8 @@ Quiz Page
 ## Acknowledgments
 
 - [Simple Countdown Timer with JavaScript](https://www.youtube.com/watch?v=x7WJEmxNlEs)
-- [How To Create A Quiz App Using JavaScript?](https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript)
 
-- 
+- [How To Create A Quiz App Using JavaScript?](https://www.codingninjas.com/codestudio/library/how-to-create-a-quiz-app-using-javascript)
 
 ## Author
 
@@ -14,7 +13,7 @@ Quiz Page
 
 ## Demo
 
-![Quiz Page Demo]()
+![Quiz Page Demo](./assets/image/quizdemo.gif)
 
 ## Features
 

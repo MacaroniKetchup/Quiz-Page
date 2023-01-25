@@ -109,7 +109,7 @@
   // Variables
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  const submitButton = document.getElementById('resultBtn');
   const myQuestions = [
     {
       question: "1. Which of the following keywords is used to define a variable in Javascript?",
@@ -180,6 +180,26 @@
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 
+  // STORAGE
+
+  // var name = document.getElementById("name");
+  // var grade = document.getElementById("results");
+  // var resultBtn = document.getElementById("resultBtn");
+ 
+  
+  // resultBtn.addEventListener("click", function(event) {
+  // event.preventDefault();
+  
+  // var name = {
+  //   name: name.name,
+  //   score: score.results,
+  // };
+  
+  // localStorage.setItem("results", JSON.stringify(name));
+  // renderMessage();
+  
+  // });
+  
 })();
 
 // TIMER
@@ -212,11 +232,6 @@ function endTime() {
   timeH.innerHTML = 'QUIZ OVER'
 }
 })();
-
-
-
-
-
 
 //                     question: "1. Which of the following keywords is used to define a variable in Javascript?",
 //                     answers: {
